@@ -11,4 +11,4 @@ for i in ${TELEGRAM_USERNAME}; do
     MASTER="-master=${i} ${MASTER}"
 done
 echo OK
-/bin/transmission-telegram -token=${TELEGRAM_TRANSMISSION_BOT} ${MASTER} -url=${TRANSMISSION_URL} -username=${TRANSMISSION_USERNAME} -password=${PASS}
+/bin/transmission-telegram -token=${TELEGRAM_TRANSMISSION_BOT} ${MASTER} -url=${TRANSMISSION_URL} -username=${TRANSMISSION_USERNAME} -password=${PASS} -transmission-logfile=/config/transmission.log
